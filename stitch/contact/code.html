@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;family=Manrope:wght@400;500;600&amp;family=Space_Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#c1fffe",
+                        "on-secondary-fixed": "#58007a",
+                        "on-tertiary-fixed": "#001a2c",
+                        "secondary-fixed-dim": "#eaaeff",
+                        "on-background": "#ffffff",
+                        "tertiary-fixed": "#5bb8ff",
+                        "inverse-primary": "#006a6a",
+                        "surface-variant": "#262626",
+                        "on-primary-fixed-variant": "#006262",
+                        "on-tertiary-fixed-variant": "#003d5f",
+                        "surface-container-low": "#131313",
+                        "on-secondary-fixed-variant": "#8300b4",
+                        "primary-fixed-dim": "#00e6e6",
+                        "on-surface": "#ffffff",
+                        "secondary": "#d575ff",
+                        "tertiary-dim": "#2ea5f3",
+                        "tertiary-fixed-dim": "#37abf9",
+                        "inverse-surface": "#fcf8f8",
+                        "on-error-container": "#ffa8a3",
+                        "tertiary-container": "#3badfc",
+                        "surface-container": "#1a1919",
+                        "primary-container": "#00ffff",
+                        "secondary-fixed": "#f0c1ff",
+                        "surface-dim": "#0e0e0e",
+                        "secondary-dim": "#b90afc",
+                        "inverse-on-surface": "#565554",
+                        "surface-container-highest": "#262626",
+                        "primary-fixed": "#00f5f5",
+                        "on-tertiary-container": "#002a44",
+                        "surface-bright": "#2c2c2c",
+                        "error-container": "#9f0519",
+                        "on-tertiary": "#003655",
+                        "on-error": "#490006",
+                        "background": "#0e0e0e",
+                        "surface-container-high": "#201f1f",
+                        "on-primary": "#006767",
+                        "error": "#ff716c",
+                        "tertiary": "#63baff",
+                        "surface-container-lowest": "#000000",
+                        "on-secondary": "#390050",
+                        "on-surface-variant": "#adaaaa",
+                        "error-dim": "#d7383b",
+                        "on-primary-container": "#005d5d",
+                        "primary-dim": "#00e6e6",
+                        "surface": "#0e0e0e",
+                        "on-primary-fixed": "#004343",
+                        "outline": "#777575",
+                        "primary": "#c1fffe",
+                        "on-secondary-container": "#fff5fc",
+                        "outline-variant": "#494847",
+                        "secondary-container": "#9800d0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Manrope"],
+                        "label": ["Space Grotesk"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24
+        }
+        .grain-overlay {
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDe0_ROh5KDBHruICC-Q6g1TEgyyeyLAJMmYi2crbkz5XIq33XB4FMeyG89oxVGLhiwCr9axZoNvyt0NItcQD69C9vV67MTCDeFkkSKjfh9KLlMs6mbpB5WSqBPSnj1HkEglR1zuyJDwTww5Ji3oCTRXqLTGhBHbB1GBoU6eROgblxzF8Tu1ZeuoeA5WAJu6cbK0TveAbnVEr6KON8ylQSO73hLFCeL4T4G0zYUS9dJD9f0W1EjhGjr8TioDwKgZDfB3oCiIbzrQZgT);
+            opacity: 0.03;
+            pointer-events: none
+        }
+        .glass-card {
+            background: rgba(38, 38, 38, 0.4);
+            backdrop-filter: blur(20px)
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation Anchor (Shared TopNavBar component) -->
+<nav class="fixed top-0 w-full z-50 bg-[#262626]/50 backdrop-blur-xl shadow-[0_0_40px_rgba(185,10,252,0.05)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-full">
+<div class="text-2xl font-black text-white tracking-tighter">PRAFUL</div>
+<div class="hidden md:flex gap-8 items-center font-['Inter'] font-bold tracking-tight">
+<a class="text-[#adaaaa] hover:text-white transition-colors duration-300" href="#">Work</a>
+<a class="text-[#adaaaa] hover:text-white transition-colors duration-300" href="#">Expertise</a>
+<a class="text-[#adaaaa] hover:text-white transition-colors duration-300" href="#">About</a>
+<a class="text-[#c1fffe] border-b-2 border-[#c1fffe] pb-1 transition-all duration-300" href="#">Contact</a>
+<div class="flex gap-4 ml-4">
+<span class="material-symbols-outlined text-[#adaaaa] hover:text-[#c1fffe] cursor-pointer transition-all duration-300 scale-95 hover:scale-100" data-icon="mail">mail</span>
+<span class="material-symbols-outlined text-[#adaaaa] hover:text-[#c1fffe] cursor-pointer transition-all duration-300 scale-95 hover:scale-100" data-icon="terminal">terminal</span>
+</div>
+</div>
+</div>
+</nav>
+<main class="relative pt-32 pb-24 overflow-hidden min-h-screen">
+<!-- Background Grain -->
+<div class="fixed inset-0 grain-overlay z-10"></div>
+<!-- Atmospheric Glows -->
+<div class="absolute top-1/4 -left-24 w-96 h-96 bg-secondary-dim/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="absolute bottom-1/4 -right-24 w-96 h-96 bg-primary-dim/5 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-8 relative z-20">
+<!-- Section Header -->
+<header class="mb-20 space-y-4">
+<span class="font-label text-primary tracking-[0.3em] text-xs uppercase">Initiate Connection</span>
+<h1 class="font-headline text-6xl md:text-8xl font-black tracking-tighter leading-none uppercase">Let's build the <br/><span class="text-on-surface-variant">Future.</span></h1>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Contact Form Side (7 cols) -->
+<div class="lg:col-span-7 space-y-12">
+<form class="space-y-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Name Field -->
+<div class="group relative">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2 block group-focus-within:text-primary transition-colors">Identification</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-4 px-0 text-lg focus:ring-0 focus:border-primary transition-all placeholder:text-on-surface-variant/30" placeholder="Full Name" type="text"/>
+<div class="absolute bottom-0 left-0 h-[2px] w-0 bg-primary group-focus-within:w-full transition-all duration-500"></div>
+</div>
+<!-- Email Field -->
+<div class="group relative">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2 block group-focus-within:text-primary transition-colors">Digital Address</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-4 px-0 text-lg focus:ring-0 focus:border-primary transition-all placeholder:text-on-surface-variant/30" placeholder="email@nexus.com" type="email"/>
+<div class="absolute bottom-0 left-0 h-[2px] w-0 bg-primary group-focus-within:w-full transition-all duration-500"></div>
+</div>
+</div>
+<!-- Subject Field -->
+<div class="group relative">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2 block group-focus-within:text-primary transition-colors">Inquiry Subject</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-4 px-0 text-lg focus:ring-0 focus:border-primary transition-all placeholder:text-on-surface-variant/30" placeholder="Project collaboration, consultation, etc." type="text"/>
+<div class="absolute bottom-0 left-0 h-[2px] w-0 bg-primary group-focus-within:w-full transition-all duration-500"></div>
+</div>
+<!-- Message Field -->
+<div class="group relative">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2 block group-focus-within:text-primary transition-colors">Transmission Details</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant py-4 px-0 text-lg focus:ring-0 focus:border-primary transition-all resize-none placeholder:text-on-surface-variant/30" placeholder="Tell me about your vision..." rows="4"></textarea>
+<div class="absolute bottom-0 left-0 h-[2px] w-0 bg-primary group-focus-within:w-full transition-all duration-500"></div>
+</div>
+<button class="relative group overflow-hidden bg-gradient-to-r from-secondary to-primary px-12 py-5 rounded-full text-on-secondary font-headline font-black text-sm tracking-widest uppercase transition-all hover:shadow-[0_0_40px_rgba(213,117,255,0.4)] hover:scale-[1.02] active:scale-95">
+<span class="relative z-10">Send Message</span>
+</button>
+</form>
+</div>
+<!-- Info & Map Side (5 cols) -->
+<div class="lg:col-span-5 space-y-8">
+<!-- Contact Cards -->
+<div class="grid grid-cols-1 gap-6">
+<div class="bg-surface-container-low p-8 rounded-xl group hover:bg-surface-container-high transition-colors border border-white/[0.03]">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 rounded-full glass-card flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="alternate_email">alternate_email</span>
+</div>
+<div>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-1">Direct Link</p>
+<p class="font-headline font-bold text-xl">hello@praful.dev</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl group hover:bg-surface-container-high transition-colors border border-white/[0.03]">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 rounded-full glass-card flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</div>
+<div>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-1">Base of Operations</p>
+<p class="font-headline font-bold text-xl">New Delhi, India</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Subtle Dark Map -->
+<div class="relative w-full h-80 rounded-xl overflow-hidden bg-surface-container-lowest grayscale group">
+<img class="w-full h-full object-cover opacity-30 group-hover:opacity-50 transition-opacity duration-700" data-alt="Abstract dark stylized topographic map of a city grid with glowing cyan fiber optic patterns and deep obsidian shadows" data-location="Tokyo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlqXsmBu3oTdkgIARefRKbHri_oQ6idKxFEAzfmSCO3dzDed7P51pCv9EeJEXBQOE_oJRDw11qzy_toEDPMkjUDxMUNnSePMoa-RG-B8VKZ5U4J0kZeLWan88Lsx7m-sHVMrxPQOi5racZpJWk1gfPdCegtQqAj18Jje6MSPUhPOwwdG3JyJZbzEp5Xv4h8aL0qn2K8oCn8gWAXDGlzJ89kd1ghoDSzabhTnkvSrDXqvNKeZ3TnT3h3afSHmR2ZJcOKI5oZ5Dk_QyR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<div class="w-4 h-4 bg-primary rounded-full animate-ping absolute opacity-75"></div>
+<div class="w-4 h-4 bg-primary rounded-full relative"></div>
+</div>
+</div>
+<!-- Social Grid -->
+<div class="pt-8 border-t border-white/5">
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-6">Network Connections</p>
+<div class="flex flex-wrap gap-4">
+<a class="px-6 py-3 bg-surface-container-low rounded-full font-label text-xs tracking-widest uppercase hover:bg-primary hover:text-on-primary transition-all duration-300 border border-white/5" href="#">Twitter</a>
+<a class="px-6 py-3 bg-surface-container-low rounded-full font-label text-xs tracking-widest uppercase hover:bg-secondary hover:text-on-secondary transition-all duration-300 border border-white/5" href="#">Dribbble</a>
+<a class="px-6 py-3 bg-surface-container-low rounded-full font-label text-xs tracking-widest uppercase hover:bg-tertiary hover:text-on-tertiary transition-all duration-300 border border-white/5" href="#">LinkedIn</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Component (Shared Footer component) -->
+<footer class="w-full py-12 px-8 bg-[#0e0e0e] mt-24">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 border-t border-[#494847]/15 pt-12 max-w-7xl mx-auto">
+<div class="text-lg font-bold text-white font-headline">PRAFUL</div>
+<div class="flex gap-8 items-center font-['Space_Grotesk'] text-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-[#adaaaa] hover:text-[#d575ff] cursor-pointer transition-colors duration-300 opacity-80 hover:opacity-100" data-icon="mail">mail</span>
+<span class="material-symbols-outlined text-[#adaaaa] hover:text-[#d575ff] cursor-pointer transition-colors duration-300 opacity-80 hover:opacity-100" data-icon="terminal">terminal</span>
+<span class="material-symbols-outlined text-[#adaaaa] hover:text-[#d575ff] cursor-pointer transition-colors duration-300 opacity-80 hover:opacity-100" data-icon="share">share</span>
+<span class="material-symbols-outlined text-[#adaaaa] hover:text-[#d575ff] cursor-pointer transition-colors duration-300 opacity-80 hover:opacity-100" data-icon="code">code</span>
+<span class="material-symbols-outlined text-[#adaaaa] hover:text-[#d575ff] cursor-pointer transition-colors duration-300 opacity-80 hover:opacity-100" data-icon="camera_enhance">camera_enhance</span>
+<span class="material-symbols-outlined text-[#adaaaa] hover:text-[#d575ff] cursor-pointer transition-colors duration-300 opacity-80 hover:opacity-100" data-icon="public">public</span>
+</div>
+<div class="font-['Space_Grotesk'] text-sm uppercase tracking-widest text-[#adaaaa]">© 2024 Praful. Engineered for Impact.</div>
+</div>
+</footer>
+</body></html>
